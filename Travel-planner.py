@@ -47,8 +47,8 @@ def generate_itinerary(origin, destination, duration):
 def run_travel_planner():
     """Main function to run the travel planner."""
     welcome()
-    trip_origin = input("What city does your trip start from? ").strip()
-    trip_destination = input("What city is your trip going to? ").strip()
+    trip_origin = input("What city does your trip start from? ").strip().capitalize()
+    trip_destination = input("What city is your trip going to? ").strip().capitalize()
     trip_duration = input("How many days will your trip last? (Enter a number, e.g 5) ").strip()
 
     if trip_origin and trip_destination and trip_duration.isdigit():
